@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Exercises</title>
+</head>
+<body>
+    <h1>Select Exercises</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Build Workout</button>
+    </form>
+</body>
+</html>

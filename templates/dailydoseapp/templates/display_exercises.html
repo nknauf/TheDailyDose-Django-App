@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Created Workout</title>
+</head>
+<body>
+    <h1>Your Workout:</h1>
+    <ul>
+        {% for exercise in exercises %}
+        <li>{{ exercise.name }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'select_muscle_groups' %}">Start Over</a>
+</body>
+</html>
